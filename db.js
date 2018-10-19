@@ -2,13 +2,13 @@ var mysql = require('mysql');
 var db_config = {
   host : "127.0.0.1",
   user : 'root',
-  password : 'bpiwmb',
+  password : 'bpiwmb123',
   database : 'webapp'
 }
 
 var connections;
 
-function handDisconnect(){
+function handleDisconnect(){
   connection = mysql.createConnection(db_config);
   connection.connect(function(err){
     if(err){
